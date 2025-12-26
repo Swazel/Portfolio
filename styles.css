@@ -38,9 +38,7 @@ body {
 
 .underlay {
   position: fixed;
-  background-color: #172554;
   inset: 0;
-  opacity: 15%;
 }
 
 header,
@@ -105,6 +103,26 @@ section h5 {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sticky-header h5 {
+  position: relative;
+  z-index: 2;
+}
+
+.sticky-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0d1322;
+  opacity: 90%;
 }
 
 .about-contents {
@@ -226,7 +244,7 @@ section h5 {
   opacity: 20%;
 }
 .project-card .disclaimer:hover {
-  color: rgb(179, 110, 123);
+  color: var(--color-accent);
   opacity: 100%;
 }
 .anchor-text span {
@@ -237,14 +255,39 @@ section h5 {
   margin-left: 0.5rem;
 }
 
-footer {
+footer p {
   text-align: center;
-  font-size: 0.5rem;
-  color: var(--color-highlight);
+  font-size: 0.9rem;
   margin-top: 4rem;
-  opacity: 60%;
+  opacity: 50%;
 }
 
-footer p {
-  font-weight: 200;
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-accent);
+  color: #0d1322;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  header {
+    grid-column: span 4 / span 4;
+  }
+
+  main {
+    grid-column: span 8 / span 8;
+  }
+
+  footer {
+    grid-column: span 12 / span 12;
+  }
 }
