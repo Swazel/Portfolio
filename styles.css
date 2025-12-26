@@ -222,6 +222,21 @@ section h5 {
   gap: 1rem;
 }
 
+.project-card .disclaimer {
+  opacity: 20%;
+}
+.project-card .disclaimer:hover {
+  color: rgb(179, 110, 123);
+  opacity: 100%;
+}
+.anchor-text span {
+  transition-duration: 200ms;
+}
+
+.anchor-text:hover span {
+  margin-left: 0.5rem;
+}
+
 footer {
   text-align: center;
   font-size: 0.5rem;
