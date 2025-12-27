@@ -20,7 +20,7 @@
     />
   </head>
 
-  <body>
+  <body id="top-of-page">
     <div class="underlay"></div>
     <header>
       <a href="/"><h1>Hazel Jayne Garvey</h1></a>
@@ -30,11 +30,23 @@
         coding, UI, and interactive systems.
       </p>
       <nav>
-        <a><p>About</p></a>
-        <a><p>Experience</p></a>
-        <a><p>Projects</p></a>
+        <a href="#about" class="anchor-text"
+          ><i class="fa-solid fa-minus nav-icon"></i>About</a
+        >
+        <br />
+        <a href="#experience" class="anchor-text"
+          ><i class="fa-solid fa-minus nav-icon"></i>Experience</a
+        >
+        <br />
+        <a href="#education" class="anchor-text"
+          ><i class="fa-solid fa-minus nav-icon"></i>Education</a
+        >
+        <br />
+        <a href="#projects" class="anchor-text"
+          ><i class="fa-solid fa-minus nav-icon"></i>Projects</a
+        >
       </nav>
-      <div>
+      <div class="social-links-container">
         <a class="icon-links" target="_blank" href="https://github.com/Swazel"
           ><i class="fa-brands fa-github"></i
         ></a>
@@ -54,8 +66,10 @@
     </header>
 
     <main>
-      <section>
-        <div class="sticky-header"><h5 class="light-text">ABOUT</h5></div>
+      <section id="about">
+        <div class="sticky-header">
+          <h5 class="light-text">ABOUT</h5>
+        </div>
 
         <div class="about-contents">
           <p>
@@ -100,8 +114,10 @@
         </div>
       </section>
 
-      <section>
-        <div class="sticky-header"><h5 class="light-text">EXPERIENCE</h5></div>
+      <section id="experience">
+        <div class="sticky-header">
+          <h5 class="light-text">EXPERIENCE</h5>
+        </div>
 
         <div class="exp-contents">
           <div class="exp-card">
@@ -211,8 +227,10 @@
         </div>
       </section>
 
-      <section>
-        <div class="sticky-header"><h5 class="light-text">Education</h5></div>
+      <section id="education">
+        <div class="sticky-header">
+          <h5 class="light-text">Education</h5>
+        </div>
         <div class="edu-contents">
           <div>
             <p class="tenure">2011 — 2014</p>
@@ -239,14 +257,16 @@
         </div>
       </section>
 
-      <section>
-        <div class="sticky-header"><h5 class="light-text">Projects</h5></div>
+      <section id="projects">
+        <div class="sticky-header">
+          <h5 class="light-text">Projects</h5>
+        </div>
         <div class="project-contents">
           <div class="project-card">
             <div class="project-image-container">
               <img src="/public/jason.png" alt="Jason Smith Website design" />
             </div>
-            <div class="card-column">
+            <div class="proj-card-column">
               <a
                 class="anchor-text card-header"
                 target="_blank"
@@ -276,7 +296,7 @@
             <div class="project-image-container">
               <img src="/public/jason.png" alt="Jason Smith Website design" />
             </div>
-            <div class="card-column">
+            <div class="proj-card-column">
               <a
                 class="anchor-text card-header"
                 target="_blank"
@@ -306,7 +326,7 @@
             <div class="project-image-container">
               <img src="/public/jason.png" alt="Jason Smith Website design" />
             </div>
-            <div class="card-column">
+            <div class="proj-card-column">
               <a
                 class="anchor-text card-header"
                 target="_blank"
@@ -373,8 +393,8 @@
           href="https://www.w3.org/Style/CSS/"
           >CSS</a
         >, deployed with
-        <a class="anchor-text" target="_blank" href="https://vercel.com/"
-          >Vercel.</a
+        <a class="anchor-text" target="_blank" href="https://netlify.com/"
+          >Netlify.</a
         ><br />
         All text is set in the
         <a
@@ -386,7 +406,9 @@
         typeface.
       </p>
       <p>
-        <a href="/" class="back-to-top"><i class="fa-solid fa-angle-up"></i></a>
+        <a href="#top-of-page" class="back-to-top"
+          ><i class="fa-solid fa-angle-up"></i
+        ></a>
       </p>
     </footer>
   </body>
