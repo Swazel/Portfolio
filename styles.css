@@ -90,10 +90,16 @@ nav {
   gap: 0.2rem;
 }
 
-nav a:hover .nav-icon {
+nav a:hover .nav-icon,
+nav a.active .nav-icon {
   opacity: 100%;
   color: var(--color-accent);
   margin-right: 0.5rem;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--color-text);
 }
 
 .social-links-container {
@@ -142,6 +148,7 @@ section h5 {
   top: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  z-index: 10;
 }
 
 .sticky-header h5 {
@@ -153,8 +160,20 @@ section h5 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #0d1322;
-  opacity: 90%;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 19, 34, 0.8),
+    rgba(13, 19, 34, 0.6)
+  );
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  transition: backdrop-filter 300ms ease;
+}
+
+.sticky-header.is-stuck::before {
+  backdrop-filter: blur(14px) saturate(200%);
+  -webkit-backdrop-filter: blur(14px) saturate(200%);
 }
 
 .about-contents {
