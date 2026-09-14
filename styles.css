@@ -265,7 +265,7 @@ section h5 {
 }
 
 .project-image-container {
-  max-width: 300px;
+  width: 100%;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -346,12 +346,10 @@ footer p {
   }
 
   .project-card {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    align-items: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .card-column,
-  .proj-card-column {
+  .card-column {
     grid-column: span 3 / span 3;
   }
 
