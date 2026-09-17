@@ -6,8 +6,8 @@ import c4Homepage from "../../assets/images/c4/C4FrontpageDesktop.webp";
 import c4HomepageOld from "../../assets/images/c4/C4OldFrontpage.webp";
 import C4Oldpage from "../../assets/images/c4/C4MorpethOld.webp";
 import C4Newpage from "../../assets/images/c4/C4MorpethNew.webp";
-import c4Mobile from "../../assets/images/c4/C4Mobile.webp";
-import c4Accessibility from "../../assets/images/c4/C4Accessibility.webp";
+import c4Mobile from "../../assets/images/c4/c4Mobile.webp";
+import c4Accessibility from "../../assets/images/c4/c4Accessibility.webp";
 
 function C4CaseStudy() {
   return (
