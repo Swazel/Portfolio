@@ -1,5 +1,6 @@
 import "./FeaturedProject.css";
 import c4FrontpageDesktop from "../../assets/images/c4/C4FrontpageDesktop.webp";
+import { Link } from "react-router-dom";
 
 function FeaturedProject() {
   return (
@@ -39,9 +40,9 @@ function FeaturedProject() {
             experience across desktop and mobile.
           </p>
 
-          <a href="/projects/c4-sightcare">
+          <Link to="/projects/c4-sightcare">
             View case study <span aria-hidden="true">↗</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,22 +1,15 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero/Hero";
-import FeaturedProject from "./components/FeaturedProject/FeaturedProject";
-import EarlierWork from "./components/EarlierWork/EarlierWork";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import C4CaseStudy from "./pages/C4CaseStudy/C4CaseStudy";
 
 function App() {
   return (
-    <>
-      <main>
-        {/* <Header /> */}
-        <Hero />
-        <FeaturedProject />
-        <EarlierWork />
-        <About />
-        <Contact />
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="/projects/c4-sightcare" element={<C4CaseStudy />} />
+    </Routes>
   );
 }
 
