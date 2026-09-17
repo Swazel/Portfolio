@@ -1,0 +1,61 @@
+/* src/styles/tokens.css */
+
+:root {
+  /* --------------------------------
+     COLOURS
+  -------------------------------- */
+
+  --color-pink-swan: #bba9b6;
+  --color-blue-dianne: #213a49;
+
+  --color-paper: #f5f2ee;
+  --color-white: #ffffff;
+  --color-black: #111111;
+
+  /* Semantic colours */
+
+  --color-background: var(--color-pink-swan);
+  --color-text: var(--color-blue-dianne);
+
+  /* --------------------------------
+     TYPOGRAPHY
+  -------------------------------- */
+
+  --font-display: "Gloock", Georgia, serif;
+  --font-body: "Fira Sans", Arial, sans-serif;
+
+  /* Font weights */
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  /* --------------------------------
+     SPACING
+  -------------------------------- */
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  --space-2xl: 12rem;
+
+  /* --------------------------------
+     LAYOUT
+  -------------------------------- */
+
+  --page-padding: clamp(1.25rem, 4vw, 5rem);
+  --content-width: 1600px;
+
+  /* --------------------------------
+     TRANSITIONS
+  -------------------------------- */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+
+  /* tokens.css */
+
+  --image-offset: 1.5rem;
+}

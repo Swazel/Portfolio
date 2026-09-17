@@ -1,0 +1,53 @@
+import "./FeaturedProject.css";
+
+function FeaturedProject() {
+  return (
+    <section className="featured-project" id="work">
+      <div className="featured-project__header">
+        <p className="featured-project__number">01</p>
+
+        <p className="featured-project__label">Featured Project</p>
+      </div>
+
+      <div className="featured-project__grid">
+        <div className="featured-project__intro">
+          <h2 className="featured-project__title">C4 Sightcare</h2>
+
+          <p className="featured-project__summary">
+            A complete website redesign for an independent eyecare business.
+          </p>
+        </div>
+
+        <div className="featured-project__visual">
+          <div className="featured-project__image">
+            <img
+              src="/src/assets/images/c4/C4FrontpageDesktop.webp"
+              alt="C4 Sightcare Website"
+            />
+          </div>
+        </div>
+
+        <div className="featured-project__services">
+          <p>UX / UI</p>
+          <p>Front-end development</p>
+          <p>Accessibility</p>
+          <p>Responsive design</p>
+        </div>
+
+        <div className="featured-project__description">
+          <p>
+            Reworking the site from the ground up with a clearer information
+            architecture, stronger visual identity and a more accessible
+            experience across desktop and mobile.
+          </p>
+
+          <a href="/projects/c4-sightcare">
+            View case study <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default FeaturedProject;
