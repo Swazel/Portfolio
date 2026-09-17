@@ -1,4 +1,5 @@
 import "./FeaturedProject.css";
+import c4FrontpageDesktop from "../../assets/images/c4/C4FrontpageDesktop.webp";
 
 function FeaturedProject() {
   return (
@@ -20,10 +21,7 @@ function FeaturedProject() {
 
         <div className="featured-project__visual">
           <div className="featured-project__image">
-            <img
-              src="/src/assets/images/c4/C4FrontpageDesktop.webp"
-              alt="C4 Sightcare Website"
-            />
+            <img src={c4FrontpageDesktop} alt="C4 Sightcare Website" />
           </div>
         </div>
 

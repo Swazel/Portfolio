@@ -1,4 +1,5 @@
 import "./EarlierWork.css";
+import oldPortfolio from "../../assets/images/v1/OldPortfolio.webp";
 
 function EarlierWork() {
   return (
@@ -12,7 +13,7 @@ function EarlierWork() {
       <div className="earlier-work__grid">
         <div className="earlier-work__visual">
           <img
-            src="/src/assets/images/v1/OldPortfolio.webp"
+            src={oldPortfolio}
             alt="Previous Hazel Garvey portfolio website"
           />
         </div>
