@@ -31,10 +31,6 @@ function About() {
             development with a growing interest in interface design, interaction
             and user experience.
           </p>
-
-          <a href="/about">
-            More about me <span aria-hidden="true">↗</span>
-          </a>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import "./EarlierWork.css";
 import oldPortfolio from "../../assets/images/v1/OldPortfolio.webp";
+import { Link } from "react-router-dom";
 
 function EarlierWork() {
   return (
@@ -35,9 +36,9 @@ function EarlierWork() {
             using the interface.
           </p>
 
-          <a href="/projects/portfolio-v1">
+          <Link to="/projects/portfolio-v1">
             Explore the project <span aria-hidden="true">↗</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

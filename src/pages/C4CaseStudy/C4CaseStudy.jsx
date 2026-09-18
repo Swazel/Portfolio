@@ -14,7 +14,7 @@ function C4CaseStudy() {
     <main className="case-study">
       <section className="case-study-hero">
         <div className="case-study-hero__top">
-          <Link to="/" className="case-study-hero__back">
+          <Link to="/#work" className="case-study-hero__back">
             ← Back to work
           </Link>
 
@@ -396,7 +396,7 @@ function C4CaseStudy() {
                 Visit live website ↗
               </a>
 
-              <Link to="/">Back to work →</Link>
+              <Link to="/#work">Back to work →</Link>
             </div>
           </div>
         </div>
